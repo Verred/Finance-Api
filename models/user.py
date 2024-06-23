@@ -5,7 +5,7 @@ from config.db import meta, engine
 users = Table(
     "users", meta,
     Column("id_cliente", Integer, primary_key=True),
-    Column("nombre", String(50)),
+    Column("nombre_cliente", String(50)),
     Column("Contrasena", String(30)),
     Column("Fecha_creacion", DateTime),
     Column("estado_usuario", Boolean),
